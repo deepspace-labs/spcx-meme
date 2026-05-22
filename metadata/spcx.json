@@ -1,0 +1,31 @@
+{
+  "name": "SPCX",
+  "symbol": "SPCX",
+  "description": "SPCX is a meme/parody token on Solana, themed around rockets, billionaires, and the kind of badly-done arithmetic that says '1 billion tokens divided by 8 billion people equals 1,000 each'. It is not an investment, has no declared utility, and is not affiliated with any real aerospace company or person. For entertainment only.",
+  "image": "https://deepspace-labs.github.io/spcx-meme/assets/logo.png",
+  "external_url": "https://deepspace-labs.github.io/spcx-meme/",
+  "attributes": [
+    { "trait_type": "Type", "value": "Meme" },
+    { "trait_type": "Theme", "value": "Rockets & billionaire arithmetic" },
+    { "trait_type": "Utility", "value": "Entertainment only" },
+    { "trait_type": "Standard", "value": "SPL classic" },
+    { "trait_type": "Mint authority", "value": "Revoked" },
+    { "trait_type": "Freeze authority", "value": "None" }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://deepspace-labs.github.io/spcx-meme/assets/logo.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  },
+  "extensions": {
+    "website": "https://deepspace-labs.github.io/spcx-meme/",
+    "github": "https://github.com/deepspace-labs/spcx-meme",
+    "whitepaper": "https://github.com/deepspace-labs/spcx-meme/blob/main/docs/whitepaper.md",
+    "disclaimer": "https://github.com/deepspace-labs/spcx-meme/blob/main/docs/disclaimer.md"
+  }
+}

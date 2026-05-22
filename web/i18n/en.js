@@ -1,0 +1,71 @@
+/* SPCX i18n — English (en). Auto-generated wrapper around en.json content. */
+window.SPCX_I18N = window.SPCX_I18N || {};
+window.SPCX_I18N.en = {
+  "meta": {
+    "title": "SPCX — The Deep Space Meme Token",
+    "description": "SPCX is a meme/parody token on Solana. Not an investment. Not affiliated with SpaceX or Elon Musk. The logo is a black square because it is deep space."
+  },
+  "hero": {
+    "title": "SPCX",
+    "tagline": "The official* token of meme space exploration.",
+    "taglineSub": "*not actually official of anything. It's a meme.",
+    "logoCaption": "↑ The official SPCX logo. (Yes, that's it.)"
+  },
+  "warning": {
+    "label": "⚠️ Before you read further:",
+    "body": "SPCX is a meme/parody token. It is not an investment, has no declared utility, and is not affiliated with any real rocket company or any real billionaire. If you buy any, assume it is for fun, not for ROI."
+  },
+  "joke": {
+    "heading": "The joke",
+    "p1": "We have <strong>1,000,000,000</strong> SPCX tokens. The world population is around <strong>8,000,000,000</strong> people.",
+    "quote": "\"If we shared them out across the entire planet, everyone would get 1,000 SPCX each.\" 🤔",
+    "p2": "Sound familiar? It is the same creative arithmetic as the classic meme:",
+    "quote2": "\"If a certain billionaire shared his fortune with all of humanity, we would all be rich.\"",
+    "p3": "In reality it would be around 50 € each. And in our case it would be 0.125 SPCX each. <strong>That is exactly the joke.</strong>"
+  },
+  "logo": {
+    "heading": "About the logo",
+    "p1": "The SPCX logo, as you can see at the top of this page, is a <strong>completely black square</strong>.",
+    "p2": "This is intentional. It is not a missing image. It is not a placeholder. It is <strong>deep space</strong> — the cold, dark, mostly empty cosmic vacuum where rockets do their work.",
+    "p3": "The rocket is in there. You just can't see it. Because it is dark. Because it is space."
+  },
+  "info": {
+    "heading": "Token info",
+    "network": "Network",
+    "mint": "Mint address",
+    "supply": "Total supply",
+    "supplyValue": "1,000,000,000 SPCX (fixed)",
+    "decimals": "Decimals",
+    "mintAuth": "Mint authority",
+    "revoked": "Revoked — supply is irreversible",
+    "freezeAuth": "Freeze authority",
+    "neverAssigned": "Never assigned",
+    "standard": "Standard",
+    "standardValue": "SPL classic (not Token-2022)",
+    "liquidity": "Liquidity",
+    "liquidityValue": "Raydium CPMM, SPCX/SOL, fee 0.25%",
+    "poolId": "Pool ID"
+  },
+  "dist": {
+    "heading": "Distribution",
+    "pool": "<strong>95%</strong> (950,000,000 SPCX) in the Raydium liquidity pool, paired with 1 SOL initial.",
+    "reserve": "<strong>5%</strong> (50,000,000 SPCX) held in the creator wallet. May be used for airdrops, tips, or nothing.",
+    "lp": "<strong>LP tokens:</strong> currently held by the creator (<em>not yet burned</em>). See disclaimer."
+  },
+  "links": {
+    "heading": "Explore on-chain",
+    "jupiter": "Buy on Jupiter ↗",
+    "raydium": "Buy on Raydium ↗"
+  },
+  "docs": {
+    "heading": "Documentation",
+    "whitepaper": "📄 Parody whitepaper",
+    "disclaimer": "⚖️ Legal disclaimer",
+    "github": "💻 GitHub repository"
+  },
+  "footer": {
+    "notAffiliated": "Not affiliated with, endorsed by, or connected to Space Exploration Technologies Corp., Elon Musk, or any of his companies. \"SpaceX®\" is a registered trademark of its owner.",
+    "personal": "Personal, non-commercial project. Nothing is being sold, asked for, or advised.",
+    "licence": "MIT License"
+  }
+};

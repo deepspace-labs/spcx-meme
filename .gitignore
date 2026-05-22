@@ -1,0 +1,34 @@
+# Secretos — NUNCA subir
+.env
+.env.*
+!.env.example
+keys/
+*.key
+*.pem
+*.keypair.json
+payer.json
+mint.json
+wallet*.json
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build / OS
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude / agentes
+.claude/

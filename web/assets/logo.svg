@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SPCX official logo.
+  This file is intentionally a solid black square.
+  It is not broken. It is not missing. It is deep space.
+  Yes, the rocket is in there. You just can't see it.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#000000"/>
+</svg>

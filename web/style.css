@@ -1,0 +1,270 @@
+/* SPCX — deep-space theme.
+   The entire site is themed after the logo. Yes, that's the point. */
+
+:root {
+  --bg: #000000;
+  --bg-elev: #0a0a0e;
+  --bg-elev-2: #14141a;
+  --fg: #e8e8ee;
+  --fg-dim: #9a9aa6;
+  --accent: #ffffff;
+  --border: #1f1f28;
+  --warning-bg: #2a1a04;
+  --warning-fg: #ffcf6b;
+  --warning-border: #5a3a08;
+  --link: #c9d4ff;
+  --link-hover: #ffffff;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle starfield via radial-gradients on body */
+body {
+  background:
+    radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.4), transparent 50%),
+    radial-gradient(1px 1px at 70% 80%, rgba(255,255,255,0.3), transparent 50%),
+    radial-gradient(1px 1px at 40% 60%, rgba(255,255,255,0.25), transparent 50%),
+    radial-gradient(1px 1px at 85% 20%, rgba(255,255,255,0.35), transparent 50%),
+    radial-gradient(1px 1px at 10% 85%, rgba(255,255,255,0.3), transparent 50%),
+    radial-gradient(1px 1px at 55% 15%, rgba(255,255,255,0.2), transparent 50%),
+    radial-gradient(1px 1px at 90% 60%, rgba(255,255,255,0.4), transparent 50%),
+    radial-gradient(1px 1px at 30% 95%, rgba(255,255,255,0.25), transparent 50%),
+    #000;
+  background-attachment: fixed;
+}
+
+/* Language switcher */
+.lang-switcher {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 4px;
+  z-index: 100;
+}
+.lang-switcher button {
+  background: var(--bg-elev);
+  color: var(--fg-dim);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.lang-switcher button:hover {
+  color: var(--fg);
+  border-color: var(--fg-dim);
+}
+.lang-switcher button.active {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+}
+
+/* Layout */
+.hero, .section, footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 24px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
+.logo-frame {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 12px;
+  background: #000;
+  border: 1px solid #33333d;
+  border-radius: 8px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(255, 255, 255, 0.015);
+}
+.logo-caption {
+  margin: 0 0 16px;
+  font-size: 12px;
+  color: var(--fg-dim);
+  font-style: italic;
+}
+.hero h1 {
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin: 40px 0 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #b8b8c4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tagline {
+  font-size: 20px;
+  color: var(--fg);
+  margin: 0;
+  font-weight: 500;
+}
+.tagline-sub {
+  font-size: 14px;
+  color: var(--fg-dim);
+  font-style: italic;
+  margin: 4px 0 0;
+}
+
+/* Warning */
+.warning {
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 16px 20px;
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+  border-left: 4px solid var(--warning-fg);
+  border-radius: 6px;
+  color: var(--warning-fg);
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.warning strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--warning-fg);
+}
+
+/* Sections */
+.section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 48px 0 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+.section p {
+  margin: 0 0 14px;
+  color: var(--fg);
+}
+.section blockquote {
+  margin: 16px 0;
+  padding: 12px 20px;
+  border-left: 3px solid var(--fg-dim);
+  background: var(--bg-elev);
+  border-radius: 4px;
+  color: var(--fg);
+  font-style: italic;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-elev);
+  border-radius: 6px;
+  overflow: hidden;
+}
+th, td {
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 14.5px;
+  border-bottom: 1px solid var(--border);
+}
+tr:last-child th, tr:last-child td { border-bottom: none; }
+th {
+  color: var(--fg-dim);
+  font-weight: 500;
+  width: 38%;
+}
+td {
+  color: var(--fg);
+  word-break: break-all;
+}
+code {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  background: var(--bg-elev-2);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: var(--fg);
+}
+
+/* Lists */
+.section ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.section li { margin-bottom: 8px; }
+
+/* Link grid */
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  margin-top: 16px;
+}
+.link-grid a, .section ul a {
+  color: var(--link);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 14px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14.5px;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+.section ul a {
+  display: inline;
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: left;
+}
+.section ul a:hover { color: var(--link-hover); }
+.link-grid a:hover {
+  color: var(--link-hover);
+  border-color: var(--fg-dim);
+  background: var(--bg-elev-2);
+}
+
+/* Footer */
+footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--fg-dim);
+  font-size: 13px;
+  line-height: 1.6;
+}
+footer p { margin: 0 0 8px; }
+.copy { margin-top: 16px; opacity: 0.7; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 56px; }
+  .section h2 { font-size: 24px; }
+  th, td { font-size: 13.5px; padding: 8px 12px; }
+  th { width: 42%; }
+  .logo-frame { width: 160px; height: 160px; }
+}
